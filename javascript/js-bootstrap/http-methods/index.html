@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+    <title>Display Quotes</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 mx-auto">
+                <h3 class="text-capitalize text-center mt-3">item form</h3>
+                <div class="feedback alert alert-danger text-capitalize text-center">
+                    alert
+                </div>
+                <!-- form -->
+                <form id='httpForm' class="mb-5 mt-3">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-amazon"></i></span>
+                        </div>
+                        <input type="text" id='itemInput' class="form-control text-capitalize" placeholder="enter name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-image"></i></span>
+                        </div>
+                        <input type="text" id='imageInput' class="form-control text-capitalize" placeholder="Image">
+                    </div>
+                    <button type="submit" id='submitBtn' class="btn submitBtn btn-block text-capitalize">add item</button>
+
+                </form>
+                <!-- end of form -->
+                <!-- list  -->
+                <div class="mt-5">
+                    <h3 class="text-capitalize text-center">items</h3>
+                    <ul class="list-group items">
+                        <!-- single item -->
+                        <li class="list-group-item d-flex align-items-center justify-content-between flex-wrap item my-2">
+                            <img src="img/default.jpeg" id='itemImage' class='itemImage img-thumbnail' alt="">
+                            <h6 id="itemName" class="text-capitalize itemName">item name</h6>
+                            <div class="icons">
+
+                                <a href='#' class="itemIcon mx-2 edit-icon" data-id=''>
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href='#' class="itemIcon mx-2 delete-icon" data-id=''>
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- end of single item -->
+                    </ul>
+                </div>
+                <!-- end of list -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <!-- script js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
