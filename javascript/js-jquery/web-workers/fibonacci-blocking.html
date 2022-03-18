@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="fibonacci-blocking.css" />
+    <title>Fibonacci Blocking</title>
+  </head>
+  <body>
+
+    <div id="container">
+      <h1>Fibonacci Series</h1>
+      <h2>No Worker</h2>
+      <input type="numeric" id="seriesLength" value="40" />
+      <input type="button" id="generateButton" value="Generate Series" />
+      <img src="load.gif" />
+      <ol id="log"></ol>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="fibonacci-blocking.js"></script>
+  </body>
+</html>

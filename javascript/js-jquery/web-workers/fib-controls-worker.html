@@ -1,0 +1,28 @@
+﻿<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="fib-controls-worker.css" />
+    <title>Fibonacci With Worker</title>
+  </head>
+  <body>
+    <div id="container">
+        <h1>Fibonacci Series</h1>
+        <h2>With Controls</h2>
+        <input type="numeric" id="seriesLength" value="40" />
+        <input type="button" id="generateButton" value="Generate Series" />
+        <input type="text" id="echoBox" placeholder="type message for worker" />
+        <input type="button" id="terminateButton" value="Terminate" />
+        <input type="button" id="closeButton" value="Close" />
+        <img src="load.gif" id="loadImg" />
+        <ul id="log"></ul>
+        <ol id="series"></li>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="fib-controls-worker-script.js"></script>
+  </body>
+</html>
+
