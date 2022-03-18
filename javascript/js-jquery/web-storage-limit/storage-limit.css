@@ -1,0 +1,113 @@
+body {
+  background-color: #ccc;
+  font-family: Segoe UI;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #999;
+}
+
+th {
+  color: #666;
+}
+
+#container,
+#container img {
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+#container {
+  margin-top: 50px;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px double #fff;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#container h1 {
+  margin-top: 0px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#icons {
+  margin-top: 20px;
+}
+
+a img {
+  border: 0px;
+}
+
+p {
+  text-align: left;
+}
+
+p img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#container {
+  width: 75%;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+table tr td,
+table tr th {
+  padding: 4px;
+}
+
+h1 {
+  margin-top: 35px;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 4px;
+  height: 400px;
+  overflow: auto;
+  background-color: #eee;
+  width: 350px;
+  font-size: 0.7em;
+}
+
+.container span {
+  font-weight: bold;
+}
+
+.msg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 99%;
+  padding: 6px;
+  text-align: center;
+  background-color: #ffc;
+}
+
+.msg pre {
+  display: inline;
+}
+
+#controls,
+#error {
+  clear: both;
+}
