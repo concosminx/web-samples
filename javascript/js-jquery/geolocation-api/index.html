@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Geolocation API</title>
+  </head>
+  <body>
+
+    <div id="container">
+      <h1>Geolocation API - Example with Options</h1>
+      <section>
+        <input type="button" id="getLocationButton" value="Get Location" />
+        <a href="" id="mapLink" target="_blank">&#128681;</a>
+
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat" />
+
+        <label for="long">Longitude:</label>
+        <input type="text" id="long" name="long" />
+
+        <label for="alt">Altitude</label>
+        <input type="text" id="alt" name="alt" />
+
+        <label for="acc">Accuracy</label>
+        <input type="text" id="acc" name="acc" />
+
+        <label for="altAcc">Altitude Accuracy</label>
+        <input type="text" id="altAcc" name="altAcc" />
+
+        <label for="heading">Heading</label>
+        <input type="text" id="heading" name="heading" />
+
+        <label for="speed">Speed</label>
+        <input type="text" id="speed" name="speed" />
+
+        <label for="timestamp">Timestamp</label>
+        <input type="text" id="timestamp" name="timestamp" />
+
+        <ul id="log"></ul>
+      </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
