@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rendering Elements</title>
+
+		<style type="text/css">
+
+			#container {
+				position: relative;
+				background-color: #8AF;
+				width: 500px;
+				height: 300px;
+
+			}
+
+			#square {
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+
+			#container:hover #square {
+				-webkit-animation-name: test;
+				-webkit-animation-duration: 5s;
+				-webkit-animation-timing-function: ease-in-out;
+				-webkit-animation-iteration-count: 1;
+				-webkit-animation-direction: normal;
+
+				animation-name: test;
+				animation-duration: 5s;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: 1;
+				animation-direction: normal;
+			}
+
+			@-webkit-keyframes test {
+				0% {
+					left: 0px;
+					top: 0px;
+				}
+				25% {
+					left: 400px;
+					top: 0px;
+				}
+				50% {
+					left: 400px;
+					top: 200px;
+				}
+				75% {
+					left: 0px;
+					top: 200px;
+				}
+				100% {
+					left: 0px;
+					top: 0px;
+				}
+			}
+
+			@keyframes test {
+				0% {
+					left: 0px;
+					top: 0px;
+				}
+				25% {
+					left: 400px;
+					top: 0px;
+				}
+				50% {
+					left: 400px;
+					top: 200px;
+				}
+				75% {
+					left: 0px;
+					top: 200px;
+				}
+				100% {
+					left: 0px;
+					top: 0px;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="square"></div>
+		</div>
+
+		<script src="../libs/raphael-min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
