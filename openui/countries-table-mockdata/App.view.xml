@@ -1,0 +1,42 @@
+<mvc:View
+   controllerName="com.nimsoc.demo.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:core="sap.ui.core">
+	<Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: '/CountriesCollection',
+			sorter: {
+				path: 'text'
+			}
+		}">
+		<columns>
+			<Column width="12em">
+				<Text text="Country code" />
+			</Column>
+			<Column>
+				<Text text="Country name" />
+			</Column>
+			<Column width="100px">
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text
+						text="{key}" >
+					</Text>
+					<Text
+						text="{text}" >
+					</Text>
+					<Button text="Print code" press="handleButtonPress">
+						<customData>
+							<core:CustomData key="cCode" value="{key}" />
+						</customData>
+					</Button>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>
